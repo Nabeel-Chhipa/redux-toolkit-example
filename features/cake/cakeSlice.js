@@ -12,7 +12,7 @@ const cakeSlice = createSlice({
             state.numOfCakes--
         },
         restockCake: (state, action) => {
-            state.numOfCakes = action.payload
+            state.numOfCakes += action.payload
         }
     }
 })
